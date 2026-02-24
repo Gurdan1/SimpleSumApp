@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-
     // Общий метод для получения чисел с проверкой
     private fun getNumbers(): Pair<Double, Double>? {
         val firstStr = binding.editNumberOne.text.toString()
