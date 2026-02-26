@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -31,32 +29,50 @@
         android:hint="Введите второе число"
         android:inputType="numberDecimal"
         android:padding="16dp"
-        android:layout_marginBottom="24dp"/>
+        android:layout_marginBottom="16dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
 
         <Button
             android:id="@+id/btnSum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Сложить"
-            android:paddingLeft="32dp"
-            android:paddingRight="32dp"/>
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
 
+        <Button
+            android:id="@+id/btnSubtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вычесть"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginStart="16dp"/>
 
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Очистить"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginStart="16dp"/>
     </LinearLayout>
+
     <TextView
         android:id="@+id/tvOperation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Операция: —"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:gravity="center"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginBottom="8dp"/>
 
     <TextView
         android:id="@+id/tvResult"
@@ -65,5 +81,5 @@
         android:text="Результат: —"
         android:textSize="22sp"
         android:gravity="center"
-        android:layout_marginTop="32dp"/>
+        android:layout_marginTop="16dp"/>
 </LinearLayout>
